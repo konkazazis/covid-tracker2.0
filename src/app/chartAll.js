@@ -115,12 +115,14 @@ export default function ChartAll() {
 
   return (
     <div  className='rounded-md bg-slate-200 w-[550px] m-4 shadow-lg' >
+      <div className='p-6'>
       <Chart
         options={dataSample.options}
         series={dataSample.series}
         type="area"
         width="500"
       />
+      </div>
     </div>
   );
 }

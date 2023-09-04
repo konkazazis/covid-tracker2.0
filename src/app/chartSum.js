@@ -47,24 +47,36 @@ export default function ChartSum() {
   //Apexchart data options
   const chartData = {
     options: {
+      chart: {
+        type: 'donut'
+      },
+      labels: ['Cases', 'Deaths', 'Recovered'], 
     },
-    series: [
-    ],
-   
+    series: [data.cases, data.deaths, data.recovered], // Set series data outside of the 'options' object
   };
+  
   
   return (
     <div>
-      <Chart
-        options={chartData.options}
-        series={chartData.series}
-        type="area"
-        width="500"
-      />
-      <h1>Statistics Today </h1>
-      <h3>Cases Today: {data.todayCases}</h3>
-      <h3>Deaths Today: {data.todayDeaths}</h3>
-      <h3>Recovered Today: {data.todayRecovered}</h3>
+      <div className='rounded-md bg-slate-200 w-[550px] m-4 shadow-lg'>
+        <div className='p-6'>
+          <Chart
+            options={chartData.options}
+            series={chartData.series}
+            type="donut"
+            width="500"
+          />
+        </div>
+      </div>
+      <div className='rounded-md bg-slate-200 w-[550px] m-4 shadow-lg'>
+        <div className='p-6'>
+          <h1 className='text-3xl'>Statistics Today </h1>
+          <h3>Cases Today: {data.todayCases}</h3>
+          <h3>Deaths Today: {data.todayDeaths}</h3>
+          <h3>Recovered Today: {data.todayRecovered}</h3>
+        </div>
+      </div>
+      
     </div>
   );
 }
