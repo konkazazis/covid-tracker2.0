@@ -1,6 +1,8 @@
 import 'tailwindcss/tailwind.css';
 import ChartSum from './chartSum';
 import ChartAll from './chartAll';
+import News from './news';
+import Weather from './weather';
 
 
 const Home = () => {
@@ -11,19 +13,20 @@ const Home = () => {
         <h1 className="text-2xl font-light text-center p-2">Covid-19 Dashboard</h1>
       </div>
 
-      <div className="grid grid-cols-3 gap-4"> 
+      <div className="grid grid-cols-3 gap-6"> 
 
         <div className="col-span-1">
           <ChartAll/>
+          <Weather/>
         </div>
 
         <div className="col-span-1">
-          {/* Add your content for the second column here */}
+          <ChartSum />
         </div>
 
         <div className="col-span-1">
           {/* Add your content for the third column here */}
-          <ChartSum />
+          <News />
         </div>
 
       </div>

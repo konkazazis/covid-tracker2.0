@@ -32,7 +32,7 @@ export default function ChartSum() {
 
     fetchData(CovidDataSums)
       .then(data => {
-        console.log(data);
+        
         setData(data);
       })
       .catch(error => {
@@ -48,7 +48,7 @@ export default function ChartSum() {
   const chartData = {
     options: {
       chart: {
-        type: 'donut'
+        type: 'donut',
       },
       labels: ['Cases', 'Deaths', 'Recovered'], 
     },
@@ -58,19 +58,20 @@ export default function ChartSum() {
   
   return (
     <div>
-      <div className='rounded-md bg-slate-200 w-[550px] m-4 shadow-lg'>
-        <div className='p-6'>
+      <div className='rounded-md bg-slate-200 w-[450px] m-4 shadow-lg'>
+        <div className='p-4 text-center'>
+          <h1 className="mb-4 font-light">Covid-19 Cases/Deaths/Recovered Worldwide</h1>
           <Chart
             options={chartData.options}
             series={chartData.series}
-            type="donut"
-            width="500"
+            type='donut'
+            width={"350"}
           />
         </div>
       </div>
-      <div className='rounded-md bg-slate-200 w-[550px] m-4 shadow-lg'>
+      <div className='rounded-md bg-slate-200 w-[450px] m-4 shadow-lg'>
         <div className='p-6'>
-          <h1 className='text-3xl'>Statistics Today </h1>
+          <h1 className='text-3xl font-semibold mb-4'>Statistics Today </h1>
           <h3>Cases Today: {data.todayCases}</h3>
           <h3>Deaths Today: {data.todayDeaths}</h3>
           <h3>Recovered Today: {data.todayRecovered}</h3>
