@@ -21,7 +21,7 @@ export default function News() {
       setData(responseData); // Update the entire data object
     } catch (error) {
       console.error('Error fetching data:', error);
-      setErrorInfo(error.message); // Set the errorInfo state to the error message
+      setErrorCode(error.message); // Set the errorInfo state to the error message
     }
   };
 
