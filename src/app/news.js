@@ -27,16 +27,16 @@ export default function News() {
 
   useEffect(() => {
     const CovidDataPerDay =
-      "http://api.mediastack.com/v1/news?access_key=760fa3ca53e7df13309a62c5a91dcb2c";
+      "http://api.mediastack.com/v1/news?access_key=8a4bae338dafa4a14234f2bf2e96bcd8";
     
     // Use the fetchData function to make the fetch request
-    fetchData(CovidDataPerDay);
+    //fetchData(CovidDataPerDay);
   }, []);
 
   console.log(data);
 
   return (
-    <div className='rounded-md bg-slate-200 m-4 shadow-lg'>
+    <div className='rounded-md bg-zinc-50 m-4 shadow-lg'>
       {data.data.length > 0  ? data.data.slice(0, 5).map((newsItem, index) => (
         <li className='list-none p-4 flex items-center justify-between' key={index}>
           <a href={newsItem.url} className='flex items-center'>

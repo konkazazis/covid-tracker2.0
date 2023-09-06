@@ -3,13 +3,14 @@ import ChartSum from './chartSum';
 import ChartAll from './chartAll';
 import News from './news';
 import Weather from './weather';
+import Map from './map';
 
 
 const Home = () => {
   return (
     <div>
 
-      <div className='rounded-md bg-slate-200 m-4 shadow-lg'>
+      <div className='rounded-md bg-zinc-50 m-4 shadow-lg'>
         <h1 className="text-2xl font-light text-center p-2">Covid-19 Dashboard</h1>
       </div>
 
@@ -22,6 +23,7 @@ const Home = () => {
 
         <div className="col-span-1">
           <ChartSum />
+          <Map />
         </div>
 
         <div className="col-span-1">
