@@ -10,8 +10,6 @@ An application used to monitor worldwide covid-19 stats with charts and info. I 
 
 ## Installation and Setup Instructions
 
-#### Example:  
-
 Clone down this repository. You will need `node` and `npm` installed globally on your machine.  
 
 Installation:
