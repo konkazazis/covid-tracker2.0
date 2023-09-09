@@ -3,7 +3,7 @@ import ChartSum from './chartSum';
 import ChartAll from './chartAll';
 import News from './news';
 import Weather from './weather';
-import Map from './map';
+
 
 
 const Home = () => {
@@ -23,7 +23,7 @@ const Home = () => {
 
         <div className="col-span-1">
           <ChartSum />
-          <Map />
+
         </div>
 
         <div className="col-span-1">

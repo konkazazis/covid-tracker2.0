@@ -41,8 +41,7 @@ export default function ChartSum() {
    
   }, []);
 
-  // console.log(targetDates);
-  // console.log(selectedCases);
+  console.log(data);
  
   //Apexchart data options
   const chartData = {
@@ -58,18 +57,18 @@ export default function ChartSum() {
   
   return (
     <div>
-      <div className='rounded-md bg-zinc-50 w-[450px] m-4 shadow-lg'>
+      <div className='rounded-md bg-zinc-50 m-4 shadow-lg'>
         <div className='p-4 text-center'>
           <h1 className="mb-4 font-light">Covid-19 Cases/Deaths/Recovered Worldwide</h1>
           <Chart
             options={chartData.options}
             series={chartData.series}
             type='donut'
-            width={"350"}
+            
           />
         </div>
       </div>
-      <div className='rounded-md bg-zinc-50 w-[450px] m-4 shadow-lg'>
+      <div className='rounded-md bg-zinc-50 m-4 shadow-lg'>
         <div className='p-6'>
           <h1 className='text-3xl font-semibold mb-4'>Statistics Today </h1>
           <h3>Cases Today: {data.todayCases}</h3>

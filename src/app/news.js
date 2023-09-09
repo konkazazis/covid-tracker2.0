@@ -33,7 +33,7 @@ export default function News() {
     //fetchData(CovidDataPerDay);
   }, []);
 
-  console.log(data);
+  //console.log(data);
 
   return (
     <div className='rounded-md bg-zinc-50 m-4 shadow-lg'>

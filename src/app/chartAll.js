@@ -114,14 +114,13 @@ export default function ChartAll() {
   };
 
   return (
-    <div  className='rounded-md bg-zinc-50 w-[450px] m-4 shadow-lg' >
+    <div  className='rounded-md bg-zinc-50 m-4 shadow-lg' >
       <div className='p-6 text-center'>
         <h1 className="mb-4 font-light">Covid-19 cases across time</h1>
         <Chart
           options={dataSample.options}
           series={dataSample.series}
           type="area"
-          width="350"
         />
       </div>
     </div>
