@@ -6,7 +6,7 @@ An application used to monitor worldwide covid-19 stats with charts and info. I 
 
 ## Project Screen Shot(s)
 
-![screenshot](https://github.com/konkazazis/covid-tracker2.0/assets/52115101/9a76314a-1ecf-4aef-b322-19ee00d8d5dc)
+![screenshot](https://github.com/konkazazis/covid-tracker2.0/assets/52115101/5fe1df35-3d36-407e-89c9-a2d3f301eb9c)
 
 ## Installation and Setup Instructions
 
